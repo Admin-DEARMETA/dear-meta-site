@@ -120,21 +120,11 @@
           <div><dt>회사명</dt><dd>(주)디어메타 DEARMETA Corporation</dd></div>
           <div><dt>설립</dt><dd>2021년 12월</dd></div>
           <div><dt>대표</dt><dd>임창섭</dd></div>
-          <div><dt>직원</dt><dd>8~10명</dd></div>
-          <div><dt>협업한 게임</dt><dd>EARTH WARS: 지구 탈환, 그랜드 마스터 키우기</dd></div>
+          <div><dt>직원</dt><dd>4~5명</dd></div>
+          <div><dt>협업한 게임</dt><dd class="titles"><span>렐리온</span>, <span>텐 발키리</span>, <span>잡캐 키우기</span>, <span>마법로 기사 25길</span>, <span>EARTH WARS: 지구 탈환</span>, <span>그랜드 마스터 키우기</span></dd></div>
           <div><dt>주소</dt><dd>서울특별시 금천구 가산디지털1로 186, 12층 1206-1호(가산동, 제이플라츠)</dd></div>
           <div><dt>문의</dt><dd><a href="mailto:Admin@dear-meta.com">Admin@dear-meta.com</a></dd></div>
         </dl>
-
-        <figure class="film">
-          <div class="film-frame" data-youtube="AQOb9cxk1CE">
-            <button type="button" aria-label="마녀의 기사 토카토카 댄스 영상 재생">
-              <img src="https://i.ytimg.com/vi/AQOb9cxk1CE/hqdefault.jpg" alt="" loading="lazy" width="480" height="360" onerror="this.remove()">
-              <svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="36" fill="#02b2a1"/><path d="M29 23.5v25l20-12.5z" fill="#fff"/></svg>
-            </button>
-          </div>
-          <figcaption>마녀의 기사 토카토카 댄스</figcaption>
-        </figure>
       </div>
     </div>
   </section>
@@ -195,19 +185,5 @@
   </div>
 </footer>
 
-<script>
-  document.querySelectorAll('[data-youtube]').forEach(function (frame) {
-    var button = frame.querySelector('button');
-    button.addEventListener('click', function () {
-      var iframe = document.createElement('iframe');
-      iframe.src = 'https://www.youtube-nocookie.com/embed/' + frame.dataset.youtube + '?autoplay=1&rel=0';
-      iframe.title = '마녀의 기사 토카토카 댄스';
-      iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
-      iframe.allowFullscreen = true;
-      frame.replaceChildren(iframe);
-      iframe.focus();
-    });
-  });
-</script>
 </body>
 </html>
